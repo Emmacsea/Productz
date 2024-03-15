@@ -4,149 +4,142 @@
     box-sizing: border-box;
 }
 
-.container {
-    display: flex;
-    min-height: 100vh;
-    justify-content: center;
-    align-content: center;
-    place-items: center;
+.container{
     background: hsl(30, 38%, 92%);
-    
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
 }
 
 .details {
-   
+    width: 500px;
+    height: 390px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    
+    background: hsl(0, 0%, 100%);
+    border-radius: .5em;
+
 }
 
 .left, .right {
-    width: 320px;
-    height: 400px;
-    display: flex;   
-    background: hsl(0, 0%, 100%);
-   
-}
-
-.left {
-    background: hsl(0, 0%, 100%);
-    border-top-left-radius: .5em;
-    border-bottom-left-radius: .5em;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
 }
 
-img {
-    width: 320px;
-    /* height: 400px; */
+.left {
+    width: 50%;
+
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
     border-top-left-radius: .5em;
     border-bottom-left-radius: .5em;
 }
 
 .right {
-    font-size: 1em;
-    font-weight: 300;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    text-align: left;
-    padding-top: 16px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background: hsl(0, 0%, 100%);
-    border-top-right-radius: .5em;
-    border-bottom-right-radius: .5em;    
+    padding: 0 1.3em;
 }
 
 
 .right h6 {
-    text-align: left;
-    color: hsl(228, 12%, 48%);
-    margin: .5em 0 .8em;
+    color: hsl(158, 36%, 37%);
+    font-size: .81em;
+    letter-spacing: .2em;
+    font-weight: 300;
     text-transform: uppercase;
-    font-size: .8em;
+    padding: 2em 0 .8em;
 }
 
-.right h3 {
-    font-size: 2.8em;
-    font-weight: 600;
+.right .p {
     color: hsl(212, 21%, 14%);
-    line-height: 1.01em;
-    margin-bottom: .5em;
+    font-size: 2em;
+    font-weight: 800;
+    
 }
 
 .right .d {
+    font-size: 1em;
+    font-weight: 200;
+    padding-top: 1em;
+    line-height: 1.4em;
     color: hsl(228, 12%, 48%);
-    font-size: 1.2em;
+    padding-bottom: .6em;
 }
 
 .right .price {
-    font-size: 2em;
-    font-weight: 400;
-    display: flex;
-    gap: 13px;
-    color: hsl(158, 36%, 37%); 
-    padding: 1px 0 9px;
-    margin-top: 8px;
-    margin-bottom: .8em;
-}
-
-.price span {
-    font-size: .32em;
-    margin-top: 1em;
-}
-
-button {
-    outline: 0;
-    border: 1px solid hsl(158, 36%, 37%);
-    background: hsl(158, 36%, 37%); 
-    padding: 11px 24px;
-    border-radius: .4em;
-    margin-top: -2.3em;
-    cursor: pointer;
-    color: hsl(0, 0%, 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-button img {
-    width: 20px;
-    height: 21px;
-}
-
-button:hover {
-    background: hsl(159, 57%, 21%);
-}   
-
-.attribution{
-    text-align: center;
     color: hsl(158, 36%, 37%);
-    margin-top: -31px;
+    font-size: 2em;
+    padding-bottom: .3em;
+    display: flex;
+    gap: 20px;
+    
+}
+
+.right span {
+    font-size: .3em;
+    color: hsl(212, 21%, 14%);
+    margin-bottom: 2em;
+    margin-top: 1.4em;
+}
+
+.right button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    border: none;
+    outline: none;
+    background: hsl(158, 36%, 37%);
+    padding: .8em 3em ;
+    color: hsl(0, 0%, 100%);
+    border-radius: .4em;
+    margin-bottom: 2em;
+    font-size: .86em;
+    cursor: pointer;
+    
+}
+
+.right button:hover {
+    background: hsl(157, 40%, 20%);
+
+}
+
+.right img {
+    width: 23px;
+    height: 23px;
+}
+
+.attribution {
+    text-align: center;
+    padding: 2em 0;
+    display: flex;
     font-size: 11px;
-    font-weight: 400;
+    gap: 4px;
+    margin-top: 3em;
 }
 
 .attribution a {
     text-decoration: none;
-    color: hsl(228, 45%, 44%);
-
+    color: hsl(158, 36%, 37%);
 }
 
-@media screen and (max-width: 600px) {
-
-    .details {
-        flex-direction: column;
-       
-    }
-
-    .left, .right {
-        display: flex;
-        flex-direction: column;
-        width: 300px;
-        height: 320px;
-    }
+@media screen and (max-width: 500px) {
     
+    .details {
+        /* width: auto;
+        height: auto;
+        display: flex; */
+        flex-direction: column;
+    }
 }
