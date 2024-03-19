@@ -34,13 +34,18 @@
 
 .left {
     width: 50%;
-    background-image: url(images/image-product-desktop.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    
+
+}
+
+.left .ir {
     border-top-left-radius: .5em;
     border-bottom-left-radius: .5em;
+    height: 100%;
+}
 
+.left .im {
+    display: none;
 }
 
 .right {
@@ -136,32 +141,30 @@
 
 @media screen and (max-width: 650px) {
     .details {
-        width: 320px;
+        width: 500px;
         height: auto;
         display: flex;
-        align-items: center;
-        background: hsl(0, 0%, 100%);
-        border-radius: .5em;
         flex-direction: column;
     
-    }
-    
-    .left, .right {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        /* justify-content: center; */
-        
     }
 
-    .left {
-        /* width: 50%; */
-        background-image: url(images/image-product-mobile.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-top-left-radius: .5em;
-        border-bottom-left-radius: .5em;
-    
+    .left .ir {
+        display: none;
     }
+
+    .left .im {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 230px;
+        height: 230px;
+
+    }
+
+    .right button {
+        padding: 1em 1.2em;
+    }
+    
+   
+    .
 }
