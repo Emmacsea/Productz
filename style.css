@@ -148,6 +148,7 @@
         height: auto;
         display: flex;
         flex-direction: column;
+        border-radius: .5em;
     
     }
 
@@ -162,14 +163,13 @@
     }
 
     .left {
-        width: 383px;
+        width: 370px;
     }
 
     .left .im{
         display: flex;
-        border-top-left-radius: 1.3em;
-        border-top-right-radius: 1.3em;
-        padding: 0 1em;
+        border-top-left-radius: .5em;
+        border-top-right-radius: .5em;
     }
 
 }
